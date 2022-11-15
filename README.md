@@ -1,4 +1,4 @@
-# starlingbank-interview
+# starlingbank-interview by Joao Sardinha
 
 ### Hello reviewer 👋
 
