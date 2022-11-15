@@ -30,4 +30,4 @@ Each component's responsibility follows a simple clean architecture + mvvm setup
 - The transactions service api supports rounding up transactions within a date range as that seemed like a necessary feature, but the actual implementation in the data layer is missing because it would need better caching
 - There are a few other things I left to do, which should all have a docstring explaining it nearby!
 
-I noticed in the starling api docs there's a /round-up method, I wasn't sure if it was expected to use that but I included the rounding logic in the application instead, either way this was my first time using Flow so I enjoyed working on this test project :) 
+I noticed in the starling api docs there's a /round-up method, I wasn't sure if it was expected to use that but I included the rounding logic in the application instead, either way this was my first time actually using Flow a bit so I enjoyed working on this test project :) 
