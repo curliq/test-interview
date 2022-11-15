@@ -28,6 +28,7 @@ Each component's responsibility follows a simple clean architecture + mvvm setup
 - DI: all objects are being created in the viewmodel factory so they are attatched to the activity's lifecycle, in a real project I'd implement a more robust solution (probably either hilt or koin)
 - Caching in the data layer is currently just a local variable for simplicity, a real solution would be something like an sql database (room etc)
 - The transactions service api supports rounding up transactions within a date range as that seemed like a necessary feature, but the actual implementation in the data layer is missing because it would need better caching
+- Data layer tests and UI tests
 - There are a few other things I left to do, which should all have a docstring explaining it nearby!
 
 I noticed in the starling api docs there's a /round-up method, I wasn't sure if it was expected to use that but I included the rounding logic in the application instead, either way this was my first time actually using Flow a bit so I enjoyed working on this test project :) 
