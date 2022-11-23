@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.john.databinding.ActivityMainBinding
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        val viewModel = HomeViewModelFactory().create(HomeViewModel::class.java)
+        val viewModel = ViewModelProvider(this, HomeViewModelFactory())[HomeViewModel::class.java]
 
         val adapter = TransactionsAdapter()
         binding.transactions.adapter = adapter
