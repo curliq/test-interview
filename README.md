@@ -1,5 +1,3 @@
-# starlingbank-interview by Joao Sardinha
-
 ### Hello reviewer 👋
 
 The project uses all the latest build versions so the only change required to run should be the bearer token at:
